@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 app.all('/', (req, res) => {
+    console.log("req ",req.query)
     console.log("Just got a request!")
     res.send('Yo!')
 })
