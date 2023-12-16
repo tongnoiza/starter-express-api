@@ -6,7 +6,7 @@ app.use(cors())
 app.get('/', (req, res) => {
   console.log("รันบน port ",port)
     console.log("Just got a request!")
-    res.send('Yo!')
+    res.send(req.body)
 })
 app.listen(port,()=>{
       console.log("รันบน port ",port)
