@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.all('/', (req, res) => {
-    console.log("req ",req.query)
+  console.log("รันบน port ",port)
     console.log("Just got a request!")
     res.send('Yo!')
 })
